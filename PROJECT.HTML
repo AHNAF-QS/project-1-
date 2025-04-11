@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        /* Selects all div elements */
+        div {
+            width: 50px;
+            /* Sets the height of the div */
+            height: 100px;
+            /* Sets the initial background color */
+            background: lime;
+            /* Sets the positioning context for potential child elements or animations */
+            position: relative;
+            /* Applies the 'myfirst' animation */
+            /* name: myfirst */
+            /* duration: 4s */
+            /* iteration-count: 100 */
+            animation: myfirst 4s 100;
+            /* Makes the animation play forwards then backwards */
+            animation-direction: alternate;
+            /* Center the div for better visibility */
+            margin: 50px auto;
+        }
+
+        /* Defines the keyframes for the 'myfirst' animation */
+        @keyframes myfirst {
+            /* Start of the animation */
+            0%   { background: green; }
+            /* 25% through the animation */
+            25%  { background: yellow; }
+            /* 50% through the animation */
+            50%  { background: blue; }
+            /* 75% through the animation */
+            75%  { background: greenyellow; }
+            /* End of the animation */
+            100% { background: red; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div></div>
+
+</body>
+</html>
